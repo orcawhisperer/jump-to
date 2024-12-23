@@ -2,7 +2,7 @@
 
 JumpTo is a browser extension that enables quick navigation through custom shortlinks, working seamlessly across different browsers.
 
-![JumpTo Demo](demo.mp4)
+![JumpTo Demo](demo.gif)
 
 ## Features
 
