@@ -1,0 +1,64 @@
+{
+  "manifest_version": 3,
+  "name": "JumpTo",
+  "version": "1.0.0",
+  "description": "Quick navigation using shortlinks - works across browsers",
+  "permissions": ["storage", "tabs", "webNavigation", "notifications", "commands"],
+  "host_permissions": ["*://go/*"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "assets/icons/icon16.png",
+      "32": "assets/icons/icon32.png",
+      "48": "assets/icons/icon48.png",
+      "128": "assets/icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "assets/icons/icon16.png",
+    "32": "assets/icons/icon32.png",
+    "48": "assets/icons/icon48.png",
+    "128": "assets/icons/icon128.png"
+  },
+  "omnibox": {
+    "keyword": "go"
+  },
+  "commands": {
+    "open-popup": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+K",
+        "mac": "Command+Shift+K"
+      },
+      "description": "Open the shortlink manager"
+    },
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+L",
+        "mac": "Command+Shift+L"
+      },
+      "description": "Open the shortlink manager popup"
+    }
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+  "author": "Orca Whisper",
+  "homepage_url": "https://github.com/orcawhisper/jump-to",
+  "offline_enabled": true,
+  "minimum_chrome_version": "88",
+  "incognito": "split",
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
+  }
+}
