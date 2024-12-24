@@ -1,6 +1,6 @@
 // src/components/tabs/stats-tab.tsx
 import React from 'react';
-import { BarChart2, Star, Activity } from 'lucide-react';
+import { Activity } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import {
   LineChart,

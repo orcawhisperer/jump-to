@@ -3,8 +3,6 @@ import React from 'react';
 import { Moon, Sun, Command, BellRing, CloudUpload, Shield } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Switch } from '@/components/ui/switch';
-import { Button } from '@/components/ui/button';
-import { Alert, AlertDescription } from '@/components/ui/alert';
 import { Settings } from '@/types';
 
 interface SettingsTabProps {
@@ -35,9 +33,13 @@ export const SettingsTab: React.FC<SettingsTabProps> = ({ settings, onUpdate }) 
         <CardContent className="p-6">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <Moon className="h-5 w-5 text-muted-foreground" />
+              {settings.darkMode ? (
+                <Moon className="h-5 w-5 text-muted-foreground" />
+              ) : (
+                <Sun className="h-5 w-5 text-muted-foreground" />
+              )}
               <div>
-                <div className="font-medium">Dark Mode</div>
+                <div className="font-medium">{settings.darkMode ? 'Light Mode' : 'Dark Mode'}</div>
                 <div className="text-sm text-muted-foreground">Toggle dark mode theme</div>
               </div>
             </div>
