@@ -1,4 +1,3 @@
-// src/hooks/useSettings.ts
 import { useState, useEffect, useCallback } from 'react';
 import { Settings } from '@/types';
 import { StorageService } from '@/services/storage';

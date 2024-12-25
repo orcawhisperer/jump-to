@@ -1,6 +1,4 @@
-// src/content/index.ts
 // This script runs in the context of web pages
-
 // Listen for messages from the background script
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   try {

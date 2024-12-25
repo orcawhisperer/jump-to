@@ -1,4 +1,3 @@
-// src/components/tabs/recent-tab.tsx
 import React, { useState } from 'react';
 import { Clock, ExternalLink, Trash2, Search, AlertCircle } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';

@@ -1,4 +1,3 @@
-// src/hooks/useShortcuts.ts
 import { useState, useEffect, useCallback } from 'react';
 import { ShortcutMap, Shortcut, RecentItem } from '@/types';
 import { StorageService } from '@/services/storage';

@@ -1,4 +1,3 @@
-// src/components/tabs/stats-tab.tsx
 import React from 'react';
 import { Activity } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';

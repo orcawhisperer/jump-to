@@ -1,4 +1,3 @@
-// src/services/analytics.ts
 import { Analytics, AnalyticsEvent } from "@/types"
 import { StorageService } from "./storage"
 

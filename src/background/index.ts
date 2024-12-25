@@ -1,4 +1,3 @@
-// src/background/index.ts
 import { StorageService } from "@/services/storage"
 import { UrlService } from "@/services/url"
 import { AnalyticsService } from "@/services/analytics"

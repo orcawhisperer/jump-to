@@ -1,4 +1,3 @@
-// src/setupTests.ts
 import '@testing-library/jest-dom';
 
 // Mock chrome API

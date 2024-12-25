@@ -1,4 +1,3 @@
-// src/components/tabs/settings-tab.tsx
 import React from 'react';
 import { Moon, Sun, Command, BellRing, CloudUpload, Shield } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';

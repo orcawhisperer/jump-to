@@ -1,56 +1,60 @@
-// src/types/index.ts
-
 export interface Shortcut {
-   url: string
-   category: string
-   created: number
-   lastUsed?: number
-   usageCount?: number
-   tags?: string[]
+  url: string;
+  category: string;
+  created: number;
+  lastUsed?: number;
+  usageCount?: number;
+  tags?: string[];
 }
 
 export interface ShortcutMap {
-   [key: string]: Shortcut
+  [key: string]: Shortcut;
 }
 
 export interface UsageStats {
-   totalShortcuts: number
-   mostUsed: string | null
-   lastUsed: string | null
-   dailyUsage: DailyUsage[]
-   version: string
-   usageCounts: {
-      [key: string]: number
-   }
+  totalShortcuts: number;
+  mostUsed: string | null;
+  lastUsed: string | null;
+  dailyUsage: DailyUsage[];
+  version: string;
+  usageCounts: {
+    [key: string]: number;
+  };
 }
 
 export interface DailyUsage {
-   date: number
-   shortcuts: {
-      [key: string]: number
-   }
+  date: number;
+  shortcuts: {
+    [key: string]: number;
+  };
 }
 
 export interface Settings {
-   analyticsEnabled: boolean
-   darkMode: boolean
-   keyboardShortcutsEnabled: boolean
-   autoBackupEnabled: boolean
-   backupFrequency: number
-   defaultCategory: string
+  analyticsEnabled: boolean;
+  darkMode: boolean;
+  keyboardShortcutsEnabled: boolean;
+  autoBackupEnabled: boolean;
+  backupFrequency: number;
+  defaultCategory: string;
 }
 
 export interface RecentItem {
-   shortcut: string
-   timestamp: number
+  shortcut: string;
+  timestamp: number;
 }
 
 export interface Analytics {
-   events: AnalyticsEvent[]
+  events: AnalyticsEvent[];
 }
 
 export interface AnalyticsEvent {
-   eventName: string
-   timestamp: number
-   data: any
+  eventName: string;
+  timestamp: number;
+  data: any;
+}
+
+export interface HotKey {
+  shortcut: string;
+  url: string;
+  key: string;
 }

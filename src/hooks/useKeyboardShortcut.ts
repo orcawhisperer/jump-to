@@ -1,4 +1,3 @@
-// src/hooks/useKeyboardShortcut.ts
 import { useEffect, useCallback } from 'react';
 
 type KeyCombo = {

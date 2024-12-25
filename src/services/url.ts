@@ -1,5 +1,3 @@
-// src/services/url.ts
-
 export class UrlService {
    static sanitizeUrl(url: string): string {
       let cleanUrl = url.trim()

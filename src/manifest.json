@@ -3,7 +3,7 @@
   "name": "JumpTo",
   "version": "1.0.0",
   "description": "Quick navigation using shortlinks - works across browsers",
-  "permissions": ["storage", "tabs", "webNavigation", "notifications", "commands"],
+  "permissions": ["storage", "tabs", "webNavigation", "commands"],
   "host_permissions": ["*://go/*"],
   "background": {
     "service_worker": "background.js",
@@ -54,7 +54,7 @@
     "open_in_tab": false
   },
   "author": "Orca Whisper",
-  "homepage_url": "https://github.com/orcawhisper/jump-to",
+  "homepage_url": "https://github.com/orcawhisperer/jump-to",
   "offline_enabled": true,
   "minimum_chrome_version": "88",
   "incognito": "split",
