@@ -33,7 +33,7 @@ Example: go/gh
 ## Installation
 
 ### From Chrome Web Store
-1. Visit [JumpTo on Chrome Web Store](#)
+1. Visit [JumpTo on Chrome Web Store](https://chromewebstore.google.com/detail/jumpto/phcgdchicomdkpiohonofdhhafdmanhi?authuser=0&hl=en)
 2. Click "Add to Chrome"
 3. Confirm the installation
 
